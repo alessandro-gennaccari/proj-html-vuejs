@@ -50,6 +50,7 @@ header nav .logo {
     align-items: center;
     color: #FFFFFF;
     font-size: 1.1em;
+    cursor: pointer;
 }
 
 header nav .logo img {
@@ -92,5 +93,6 @@ header nav .main-menu .navbar li:last-child a {
     border: none;
     padding: 11px 25px;
     border-radius: 50px;
+    cursor: pointer;
 }
 

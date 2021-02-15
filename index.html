@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet"> 
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <title>Document</title>
+    <title>P</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -42,12 +42,14 @@
                         <div class="navbar">
                             
                             <ul>
-                                <li v-for="word in head.navMenu">
-                                    <a :href="word.link">{{word.name}}</a>
+                                <li v-for="(word,index) in head.navMenu">
+                                    <a @click="activeMenu(index)" :href="word.link" :class="word.active ? 'navActive' : 'navWhite'">{{word.name}}</a>
+                                </li>
+                                <li>
+                                    <a class="navWhite">{{head.sign}}</a>
                                 </li>
                             </ul>
 
-                            <button>{{head.sign}}</button>
 
                         </div>
 

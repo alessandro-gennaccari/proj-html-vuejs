@@ -9,31 +9,50 @@ var app = new Vue({
                 navMenu: [
                     {
                        name: 'Home',
-                       link: '#'
+                       link: '#',
+                       active: true
                     },
                     {
                         name: 'About',
-                        link: '#'
+                        link: '#',
+                        active: false
                      },
                      {
-                        name: 'Service',
-                        link: '#'
+                        name: 'Services',
+                        link: '#',
+                        active: false
                      },
                      {
                         name: 'Blog',
-                        link: '#'
+                        link: '#',
+                        active: false
                      },
                      {
-                        name: 'Conctat',
-                        link: '#'
+                        name: 'Contact',
+                        link: '#',
+                        active: false
                      },
                      {
                         name: 'Portfolio',
-                        link: '#'
+                        link: '#',
+                        active: false
                      }
                 ],
                 sign: 'Sign In'
             }
         ]
+    },
+    methods: {
+        activeMenu(index){
+            let counter = index;
+            this.header.forEach(element => {
+                element.navMenu.forEach((element,index) => {
+                    element.active = false;
+                    if (index == counter){
+                        element.active = true;
+                    }
+                });
+            });
+        }
     }
 }); 

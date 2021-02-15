@@ -2,15 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+/* ColorClasses */ 
+.navActive {
+    color: #f9636b;
+}
+
+.navWhite {
+    color: white;
 }
 
 .container  {
     max-width: 1600px;
     margin: auto;
 
-    background-color: green;
     height: 300px;
+}
+
+/* HEADER */
+
+/* Logo e Nav */
+
+header {
+    background: linear-gradient(#0b1953 ,#01012f );
 }
 
 header nav {
@@ -18,8 +43,6 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    background-color: rgb(0, 0, 0);
 }
 
 header nav .logo {
@@ -37,10 +60,37 @@ header nav .logo img {
 header nav .logo .logo-text {
     display: flex;
     flex-direction: column;
-
 }
 
 header nav .logo .logo-text .logo-text-2 {
     font-weight: bold;
+}
+
+header nav .main-menu .navbar {
+    display: flex;
+}
+
+header nav .main-menu .navbar ul {
+    display: flex;
+}
+
+header nav .main-menu .navbar ul li {
+    margin-right: 30px;
+}
+
+header nav .main-menu .navbar ul li a {
+    font-size: 1.1em;
+}
+
+header nav .main-menu .navbar li:last-child {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+header nav .main-menu .navbar li:last-child a {
+    background: linear-gradient(90deg, #04a3d0,#1e3e83);
+    border: none;
+    padding: 11px 25px;
+    border-radius: 50px;
 }
 

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet"> 
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <title>Document</title>
@@ -11,6 +14,59 @@
 </head>
 <body>
 
+    <div id="app">
+
+        <header>
+
+            <div class="container">
+
+                <nav v-for="head in header">
+
+                    <!-- Logo -->
+                    <div class="logo">
+
+                        <img :src="head.logo" alt="Logo">
+
+                        <div class="logo-text">
+
+                            <span class="logo-text-1">{{head.logoName1}}</span>
+                            <span class="logo-text-2">{{head.logoName2}}</span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Nav Menu -->
+                    <div class="main-menu">
+
+                        <div class="navbar">
+                            
+                            <ul>
+                                <li v-for="word in head.navMenu">
+                                    <a :href="word.link">{{word.name}}</a>
+                                </li>
+                            </ul>
+
+                            <button>{{head.sign}}</button>
+
+                        </div>
+
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+
+
+
+
+
+
+    </div>
 
     <script src="js/script.js"></script>
 </body>

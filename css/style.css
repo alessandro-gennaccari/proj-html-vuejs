@@ -2,4 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+
+.container  {
+    max-width: 1600px;
+    margin: auto;
+
+    background-color: green;
+    height: 300px;
+}
+
+header nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgb(0, 0, 0);
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 1.1em;
+}
+
+header nav .logo img {
+    height: 60px;
+    margin-right:10px ;
+}
+
+header nav .logo .logo-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+header nav .logo .logo-text .logo-text-2 {
+    font-weight: bold;
+}
+

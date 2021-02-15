@@ -33,7 +33,7 @@ h1 {
 }
 
 .container  {
-    max-width: 1500px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -56,7 +56,7 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 180px;
+    margin-bottom: 200px;
 }
 
 header nav .logo {
@@ -118,7 +118,7 @@ header nav .main-menu .navbar li:last-child a:hover {
 
 header .title {
     width: 35%;
-    padding-bottom: 270px;
+    padding-bottom: 300px;
 }
 
 header .title span,
@@ -168,7 +168,7 @@ header .title a:last-child:hover,
 
 #what .services {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 #what .services .little-text {
@@ -190,7 +190,7 @@ header .title a:last-child:hover,
 }
 
 #what .service-list .card {
-    flex-basis: 23%;
+    flex-basis: 25%;
 }
 
 #what .service-list .card .item-card {
@@ -198,7 +198,7 @@ header .title a:last-child:hover,
 }
 
 #what .service-list .card .item-card .card-info {
-    padding: 50px;
+    padding: 60px;
     padding-bottom: 70px;
     padding-top: 120px;
 }
@@ -214,7 +214,7 @@ header .title a:last-child:hover,
 }
 
 #what .service-list .card .item-card img {
-    max-width: 50%;
+    max-width: 60%;
     padding: 20px;
     transform: translateY(50%);
 }

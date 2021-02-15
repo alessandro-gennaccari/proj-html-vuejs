@@ -14,6 +14,11 @@ a {
     outline: none;
 }
 
+h1 {
+    color: white;
+    font-size: 3.8em;
+}
+
 /* ColorClasses */ 
 .navActive {
     color: #f9636b;
@@ -24,10 +29,8 @@ a {
 }
 
 .container  {
-    max-width: 1600px;
+    max-width: 1550px;
     margin: auto;
-
-    height: 300px;
 }
 
 /* HEADER */
@@ -38,11 +41,18 @@ header {
     background: linear-gradient(#0b1953 ,#01012f );
 }
 
+header .container {
+    background-image: url('../img/header.png');
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+}
+
 header nav {
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 180px;
 }
 
 header nav .logo {
@@ -95,4 +105,49 @@ header nav .main-menu .navbar li:last-child a {
     border-radius: 50px;
     cursor: pointer;
 }
+
+header nav .main-menu .navbar li:last-child a:hover {
+    background: linear-gradient(90deg, #b7256e,#f8626b);
+}
+
+/* H1 Title */
+
+header .title {
+    width: 35%;
+    padding-bottom: 270px;
+}
+
+header .title span {
+    font-weight: normal;
+}
+
+header .title p {
+    color: #03A7D3E6;
+    font-size: 1.1em;
+    padding-right: 100px;
+    line-height: 1.5;
+    margin: 40px 0 70px;
+}
+
+header .title a{
+    background: linear-gradient(90deg, #b7256e,#f8626b);
+    color: white;
+    padding: 15px 52px;
+    border-radius: 50px;
+}
+
+header .title a:last-child {
+    background: linear-gradient(90deg, #04a3d0,#1e3e83);
+    margin-left: 15px;
+    padding: 15px 42px;
+}
+
+header .title a:hover{
+    background: linear-gradient(90deg, #04a3d0,#1e3e83);
+}
+
+header .title a:last-child:hover {
+    background: linear-gradient(90deg, #b7256e,#f8626b);
+}
+
 

@@ -97,6 +97,10 @@ header nav .main-menu .navbar ul li a {
     font-size: 1.1em;
 }
 
+header nav .main-menu .navbar ul li a:hover {
+    color: #f9636b;
+}
+
 header nav .main-menu .navbar li:last-child {
     margin-right: 0;
     margin-left: 30px;
@@ -112,6 +116,7 @@ header nav .main-menu .navbar li:last-child a {
 
 header nav .main-menu .navbar li:last-child a:hover {
     background: linear-gradient(90deg, #b7256e,#f8626b);
+    color: white;
 }
 
 /* H1 Title */
@@ -163,7 +168,7 @@ header .title a:last-child:hover,
 
 /* Section 1 - What */
 #what {
-    padding: 50px 0 100px;
+    padding: 40px 0 100px;
 }
 
 #what .services {
@@ -178,6 +183,11 @@ header .title a:last-child:hover,
 #what .services h2 {
     font-size: 3em;
     margin: 18px;
+}
+
+#what .services p {
+    color: #444444;
+
 }
 
 #what .services span {
@@ -198,9 +208,9 @@ header .title a:last-child:hover,
 }
 
 #what .service-list .card .item-card .card-info {
-    padding: 60px;
+    padding: 75px;
     padding-bottom: 70px;
-    padding-top: 120px;
+    padding-top: 130px;
 }
 
 #what .service-list .card .item-card .card-info h3 {
@@ -209,12 +219,13 @@ header .title a:last-child:hover,
 }
 
 #what .service-list .card .item-card .card-info p {
-    color: #818a91;
+    color: #444444;
     line-height: 1.5;
 }
 
 #what .service-list .card .item-card img {
-    max-width: 60%;
+    height: 200px;
+    min-width: 60%;
     padding: 20px;
     transform: translateY(50%);
 }

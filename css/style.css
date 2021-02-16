@@ -32,6 +32,14 @@ h1 {
     color: white;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bg_white {
+    background-color: white;
+}
+
 .container  {
     max-width: 1600px;
     margin: auto;
@@ -167,30 +175,38 @@ header .title a:last-child:hover,
 /* MAIN */
 
 /* Section 1 - What */
-#what {
+#what,
+#price {
     padding: 40px 0 100px;
 }
 
-#what .services {
+#what .services,
+#price .price-text {
     text-align: center;
     margin-bottom: 40px;
 }
 
-#what .services .little-text {
+#what .services .little-text,
+#price .price-text .little-text,
+#post .blog .little-text {
     color: #f9636b;
 }
 
-#what .services h2 {
+#what .services h2,
+#price .price-text h2,
+#post .blog h2 {
     font-size: 3em;
-    margin: 18px;
+    margin: 20px 0;
 }
 
-#what .services p {
+#what .services p,
+#post .blog p {
     color: #444444;
-
 }
 
-#what .services span {
+#what .services span,
+#price .price-text span,
+#post .blog span {
     font-weight: normal;
 }
 
@@ -326,6 +342,143 @@ header .title a:last-child:hover,
     font-size: 3.5em;
 }
 
+/* Section 3 - price */
+#price {
+    background: linear-gradient(80deg,#0b1953 ,#01012f );
+    padding-bottom: 330px;
+    padding-top: 50px;
+}
+
+#price .price-text h2 {
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#price .price-text p {
+    color: #aaaaaa;
+    line-height: 1.5;
+    padding: 0 460px;
+}
+
+#post .card-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+#post .card-price .item-card-price {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    padding: 50px 0;
+    position: relative;
+    box-shadow: 0px 0 15px 3px #0000001c;
+}
+
+#post .card-price .item-card-price .type{
+    text-align: center;
+}
+
+#post .card-price .item-card-price .type h2 {
+    font-size: 2.3em;
+    margin-bottom: 10px;
+}
+
+#post .card-price .item-card-price .type div.uppercase {
+    font-size: 0.8em;
+}
+
+#post .card-price .item-card-price .real-price {
+    margin: 40px 0;
+}
+
+#post .card-price .item-card-price .real-price h2 {
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 15px;
+}
+
+#post .card-price .item-card-price .real-price small {
+    text-align: center; 
+    font-size: 1.1em;
+}
+
+#post .card-price .item-card-price .real-price div {
+    text-align: center; 
+    font-size: 0.8em;
+}
+
+#post .card-price .item-card-price .feature {
+    text-align: center;
+}
+
+#post .card-price .item-card-price .feature h4{
+    margin: 15px 0 ;
+}
+
+#post .card-price .item-card-price .feature h4 span{
+    font-weight: normal;
+    color: #3d3d3d;
+}
+
+#post .card-price .item-card-price .price-absolute {
+    font-size: 310px;
+    position: absolute;
+    top: -11%;
+    right: -1%;
+    font-weight: bold;
+    color: #eaeaea;
+    z-index: -1;
+}
+
+#post .card-price .item-card-price.center_card {
+    color: white;
+    background: linear-gradient(130deg,#b8276e ,#f45f6c);
+}
+
+#post .card-price .item-card-price.center_card .price-absolute{
+    color: #ce4e7f;
+}
+
+#post .card-price .item-card-price.center_card .feature h4 span {
+    color: #e0e0e0;
+}
+
+#post .card-price .item-card-price a {
+    margin-top: 40px;
+    padding: 14px 30px;
+    background: linear-gradient(#b7266f, #f7626c);
+    border-radius: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+#post .card-price .item-card-price a:hover {
+    background: linear-gradient(#03a3d0, #1e3f83);
+}
+
+#post .card-price .item-card-price i {
+    margin-left: 35px;
+}
+
+#post .card-price .item-card-price.center_card  a{
+    background: linear-gradient(#ffffff, #ffffff);
+    color: #f9646c;
+}
+
+/* Section 4 - post */
+
+#post .blog {
+    margin-top: -140px;
+    text-align: center;
+}
+
+#post .blog p {
+    padding: 0 460px;
+}
 
 /* FOOTER */
 footer {

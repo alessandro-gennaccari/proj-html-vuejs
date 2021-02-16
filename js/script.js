@@ -19,7 +19,7 @@ var app = new Vue({
                      },
                      {
                         name: 'Services',
-                        link: '#',
+                        link: '#what',
                         active: false
                      },
                      {

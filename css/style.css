@@ -180,33 +180,36 @@ header .title a:last-child:hover,
     padding: 40px 0 100px;
 }
 
-#what .services,
-#price .price-text {
+#what .services{
+    margin-bottom: 250px;
     text-align: center;
-    margin-bottom: 40px;
 }
 
 #what .services .little-text,
 #price .price-text .little-text,
-#post .blog .little-text {
+#post .blog .little-text,
+#testimonial .testimonial-text .little-text {
     color: #f9636b;
 }
 
 #what .services h2,
 #price .price-text h2,
-#post .blog h2 {
+#post .blog h2,
+#testimonial .testimonial-text h2 {
     font-size: 3em;
     margin: 20px 0;
 }
 
 #what .services p,
-#post .blog p {
+#post .blog p, 
+#testimonial .testimonial-text p {
     color: #444444;
 }
 
 #what .services span,
 #price .price-text span,
-#post .blog span {
+#post .blog span, 
+#testimonial .testimonial-text span {
     font-weight: normal;
 }
 
@@ -227,6 +230,7 @@ header .title a:last-child:hover,
     padding: 75px;
     padding-bottom: 70px;
     padding-top: 130px;
+    position: relative;
 }
 
 #what .service-list .card .item-card .card-info h3 {
@@ -243,7 +247,10 @@ header .title a:last-child:hover,
     height: 200px;
     min-width: 60%;
     padding: 20px;
-    transform: translateY(50%);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
 
 #what .service-list .card:hover img  {
@@ -342,11 +349,17 @@ header .title a:last-child:hover,
     font-size: 3.5em;
 }
 
-/* Section 3 - price */
+/* Section 4 - price */
 #price {
     background: linear-gradient(80deg,#0b1953 ,#01012f );
     padding-bottom: 330px;
     padding-top: 50px;
+}
+
+#price .price-text,
+#testimonial .testimonial-text {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 #price .price-text h2 {
@@ -469,15 +482,19 @@ header .title a:last-child:hover,
     color: #f9646c;
 }
 
-/* Section 4 - post */
+/* Section 5 - post */
+#post {
+    margin-bottom: 160px;
+}
 
 #post .blog {
-    margin-top: -155px;
+    margin-top: -160px;
     text-align: center;
     margin-bottom: 120px;
 }
 
-#post .blog p {
+#post .blog p,
+#testimonial .testimonial-text p {
     padding: 0 460px;
 }
 
@@ -564,6 +581,15 @@ header .title a:last-child:hover,
 #post .blog-article .third-article a {
     position: absolute;
     bottom: 30px;
+}
+
+/* Section 6 - testimonial */
+#testimonial .testimonial-text {
+    margin-bottom: 130px;
+}
+
+#testimonial .testimonial-text h2 {
+    margin-bottom: 45px;
 }
 
 

@@ -213,7 +213,7 @@ header .title a:last-child:hover,
     font-weight: normal;
 }
 
-#what .service-list {
+#what .service-list{
     display: flex;
     justify-content: space-between;
 }
@@ -222,7 +222,8 @@ header .title a:last-child:hover,
     flex-basis: 25%;
 }
 
-#what .service-list .card .item-card {
+#what .service-list .card .item-card,
+#testimonial .testimonial-list .card .item-card {
     text-align: center;
 }
 
@@ -256,7 +257,7 @@ header .title a:last-child:hover,
 #what .service-list .card:hover img  {
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 0 15px 3px #0000001c;
+    box-shadow: 0 0 70px #0000001a;
     
 }
 
@@ -388,7 +389,7 @@ header .title a:last-child:hover,
     border-radius: 20px;
     padding: 50px 0;
     position: relative;
-    box-shadow: 0px 0 15px 3px #0000001c;
+    box-shadow: 0 0 70px #0000001a;
 }
 
 #post .card-price .item-card-price .type{
@@ -484,7 +485,7 @@ header .title a:last-child:hover,
 
 /* Section 5 - post */
 #post {
-    margin-bottom: 160px;
+    margin-bottom: 140px;
 }
 
 #post .blog {
@@ -585,11 +586,75 @@ header .title a:last-child:hover,
 
 /* Section 6 - testimonial */
 #testimonial .testimonial-text {
-    margin-bottom: 130px;
+    margin-bottom: 180px;
+}
+
+#testimonial .testimonial-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
 }
 
 #testimonial .testimonial-text h2 {
     margin-bottom: 45px;
+}
+
+#testimonial .testimonial-list .card {
+    flex-basis: 31%;
+}
+
+#testimonial .testimonial-list .card .item-card .card-info {
+    padding: 100px 30px 40px;
+    border-radius: 50px;
+    position: relative;
+}
+
+#testimonial .testimonial-list .card .item-card .card-info .star {
+    color: #d13e6e;
+}
+
+#testimonial .testimonial-list .card .item-card .card-info p {
+    color: #444444;
+    line-height: 1.5;
+    margin: 40px 0;
+}
+
+#testimonial .testimonial-list .card .item-card .card-info .avatar-img {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    border: 6px solid#b6246e;
+    position: absolute;
+    top: -29%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+#testimonial .testimonial-list .card .item-card .card-info .avatar-img img {
+    width: 100%;
+}
+
+#testimonial .testimonial-list .card .item-card .card-info h4:last-child {
+    font-weight: normal;
+    margin-top: 15px;
+    color: #444444;
+}
+
+#testimonial .testimonial-list .card .item-card .card-info:hover {
+    box-shadow: 0 0 70px #0000001f;
+}
+
+#testimonial .brand {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#testimonial .brand div{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

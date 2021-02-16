@@ -76,7 +76,7 @@ header nav .logo {
 }
 
 header nav .logo img {
-    height: 60px;
+    height: 53px;
     margin-right:10px ;
 }
 
@@ -142,7 +142,7 @@ header .title span,
 header .title p,
 #grow .grow-text p {
     color: #03A7D3E6;
-    padding-right: 100px;
+    padding-right: 140px;
     line-height: 1.5;
     margin: 40px 0 70px;
 }
@@ -472,13 +472,100 @@ header .title a:last-child:hover,
 /* Section 4 - post */
 
 #post .blog {
-    margin-top: -140px;
+    margin-top: -155px;
     text-align: center;
+    margin-bottom: 120px;
 }
 
 #post .blog p {
     padding: 0 460px;
 }
+
+#post .blog-article {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#post .blog-article .first-article {
+    width: 48%;
+    border-radius: 20px;
+    background-image: url('../img/headway-537308-unsplash-1380x703.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    line-height: 1.3;
+    color: white;
+    position: relative;
+}
+
+#post .blog-article .first-article .layover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 20px;
+}
+
+#post .blog-article .first-article .first-article-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    padding: 0 50px;
+}
+
+#post .blog-article .first-article .first-article-box .text-first-article {
+    width: 65%;
+}
+
+#post .blog-article .first-article .first-article-box .button-first-article {
+    display: flex;
+    align-items: flex-end;
+}
+
+#post .blog-article .first-article .first-article-box .text-first-article h3 {
+    margin: 20px 0;
+}
+
+#post .blog-article .first-article img {
+    width: 100%;
+}
+
+#post .blog-article .second-article,
+#post .blog-article .third-article {
+    width: 22%;
+    border-radius: 20px;
+    background: linear-gradient(130deg,#020230 ,#17316f);
+    padding: 60px 50px 115px;
+    line-height: 1.3;
+    color: white;
+}
+
+#post .blog-article h3 {
+    margin: 30px 0;
+    font-size: 1.3em;
+}
+
+#post .blog-article p {
+    font-size: 1em;
+}
+
+#post .blog-article a {
+    background-color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: black;
+}
+
+#post .blog-article .second-article a,
+#post .blog-article .third-article a {
+    position: absolute;
+    bottom: 30px;
+}
+
 
 /* FOOTER */
 footer {

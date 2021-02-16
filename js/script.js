@@ -3,9 +3,7 @@ var app = new Vue({
     data: {
         header: [
             {
-                logo: 'img/cropped-cropped-icon-270x270.png',
-                logoName1: 'Phlox',
-                logoName2: 'Corporate',
+                logo: 'img/white-logo-2.png',
                 navMenu: [
                     {
                        name: 'Home',

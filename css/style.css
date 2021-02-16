@@ -573,9 +573,14 @@ header .title a:last-child:hover,
 
 #post .blog-article a {
     background-color: white;
-    padding: 15px 35px;
+    padding: 15px 40px;
     border-radius: 50px;
     color: black;
+}
+
+#post .blog-article a:hover {
+    background: linear-gradient(#b7266f, #f7626c);
+    color: white;
 }
 
 #post .blog-article .second-article a,

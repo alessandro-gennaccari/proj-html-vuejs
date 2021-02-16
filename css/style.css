@@ -648,6 +648,7 @@ header .title a:last-child:hover,
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 200px;
 }
 
 #testimonial .brand div{
@@ -660,10 +661,132 @@ header .title a:last-child:hover,
 
 /* FOOTER */
 footer {
-    /* debug */
-    height: 300px;
-    text-align: center;
-    line-height: 300px;
-    width: 100%;
-    background-color: rgb(30, 104, 165);
+    background: linear-gradient(#0c1a54 ,#020331);
+}
+
+footer .newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 40px;
+    background: linear-gradient(90deg,#b8276e ,#f45f6c);
+    border-radius: 30px;
+    transform: translateY(-50%);
+}
+
+footer .newsletter .newsletter-text h2{
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+footer .newsletter .newsletter-text p{
+    color: #faecdc;
+    font-size: 1em;
+}
+
+footer .newsletter .input-mail {
+    position: relative;
+}
+
+footer .newsletter .input-mail input {
+    text-align: left;
+    border: none;
+    outline: none;
+    padding: 22px 350px 22px 50px;
+    border-radius: 50px;
+    color: #aaaaaa;
+    font-size: 1.1em;
+}
+
+footer .newsletter .input-mail a{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: white;
+    background: linear-gradient(90deg, #04a3d0,#1e3e83);
+    padding: 18px 40px;
+    border-radius: 50px;
+}
+
+footer .newsletter .input-mail a:hover{
+    background: linear-gradient(90deg, #b7256e,#f8626b);
+}
+
+/* Nav footer */
+footer a {
+    color: #7a7a94;
+}
+
+footer a:hover{
+    color: #f9636b;
+}
+
+footer .footer-nav {
+    display: flex;
+    padding-bottom: 60px;
+    margin-top: -50px;
+}
+
+footer .footer-nav .box-footer-nav {
+    flex-basis: 25%;
+    padding: 0 60px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .footer-nav .box-footer-nav:first-child {
+    padding-left: 0;
+    padding-right: 60px;
+}
+
+footer .footer-nav .box-footer-nav:last-child {
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+footer .footer-nav .box-footer-nav:first-child p {
+    margin-top: 40px;
+    line-height: 1.5;
+    color: #7a7a94;
+}
+
+footer .footer-nav .box-footer-nav h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer .footer-nav .box-footer-nav div {
+    padding: 7px 0;
+    color: #7a7a94;
+}
+
+footer .footer-nav .box-footer-nav span {
+    color: white;
+}
+
+footer .copy-social {
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
+footer .copy-social .credits {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+
+footer .copy-social .credits .copyright {
+    color: #7a7a94;
+}
+
+footer .copy-social .credits .social i{
+    margin-left: 45px;
+    color: white;
+    font-size: 16px;
+}
+
+footer .copy-social .credits .social i:hover{
+    color: #f9636b;
 }

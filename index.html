@@ -543,8 +543,106 @@
 
         <!-- Footer -->
         <footer>
-            Hi, I'm FOOTER  :)
+
+            <div class="container">
+
+                <!-- NewsLetterBox -->
+                <div class="newsletter">
+
+                    <div class="newsletter-text">
+                        <h2>We offer Awesome Sercices</h2>
+                        <p>When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.</p>
+                    </div>
+    
+                    <div class="input-mail">
+                        <input type="text" placeholder="Enter Your Email Address"> 
+                        <a href="#"> Subscribe</a>
+                    </div>
+    
+                </div>
+
+                <!-- Footer Nav -->
+                <div v-for="foot in footer" class="footer-nav">
+
+                    <div class="box-footer-nav">
+                        <img :src="foot.logo" alt="logo">
+                        <p>{{foot.infoText}}</p>
+                    </div>
+
+                    <div class="box-footer-nav">
+                        <h3>Quick Links</h3>
+                        <div v-for="item in foot.quickLinks">
+                            <a :href="item.url">
+                                {{item.title}}
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box-footer-nav">
+                        <h3>Resources</h3>
+                        <div v-for="item in foot.resources">
+                            <a :href="item.url">
+                                {{item.title}}
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="box-footer-nav">
+                        <h3>Contact Us</h3>
+                        <div v-for="item in foot.contact">
+                            <p>
+                                <span>{{item.title}}</span>
+                                {{item.info}}
+                            </p>
+
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
+
+            <!-- Credits -->
+            <div class="copy-social">
+
+                <div class="container">
+
+                    <div class="credits">
+
+                        <div class="copyright">
+                            <small>&copy; 2021 Alessandro Gennaccari. All Rights Reserved.</small>
+                        </div>
+    
+                        <div class="social">
+
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </footer>
+
 
 
 

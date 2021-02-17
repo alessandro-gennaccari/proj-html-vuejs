@@ -45,10 +45,12 @@ h1 {
     margin: auto;
 }
 
+#app{
+    overflow: hidden;
+}
+
 /* HEADER */
-
 /* Logo e Nav */
-
 header {
     background: linear-gradient(#0b1953 ,#01012f );
 }
@@ -186,6 +188,7 @@ header .title a:last-child:hover,
 }
 
 #what .services .little-text,
+#work .work-text .little-text,
 #price .price-text .little-text,
 #post .blog .little-text,
 #testimonial .testimonial-text .little-text {
@@ -193,6 +196,7 @@ header .title a:last-child:hover,
 }
 
 #what .services h2,
+#work .work-text h2,
 #price .price-text h2,
 #post .blog h2,
 #testimonial .testimonial-text h2 {
@@ -207,6 +211,7 @@ header .title a:last-child:hover,
 }
 
 #what .services span,
+#work .work-text span,
 #price .price-text span,
 #post .blog span, 
 #testimonial .testimonial-text span {
@@ -290,7 +295,7 @@ header .title a:last-child:hover,
 #what .services-button{
     display: flex;
     justify-content: center;
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 #what .services-button a {
@@ -308,7 +313,6 @@ header .title a:last-child:hover,
 }
 
 /* Section 2 - Grow */
-
 #grow {
     background: linear-gradient(#0b1953 ,#01012f );
     padding: 50px 0;
@@ -348,6 +352,108 @@ header .title a:last-child:hover,
     margin-top: 40px;
     color: white;
     font-size: 3.5em;
+}
+
+/* Section 3 - work */
+#work .work-text {
+    margin: 70px 0 60px;
+    position: relative;
+}
+
+#work .work-text .slider-buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#work .work-text .slider-buttons i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #f9636b;
+    color: #f9636b;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#work .slider {
+    position: relative;
+}
+
+#work #slider {
+    width: 500px;
+    height: 450px;
+    border-radius: 32px;
+    background-color: white;
+    box-shadow: 0 0 70px #0000001a;
+}
+
+#work #slider:hover {
+    background: linear-gradient(90deg,#cc396d,#f8636b);
+    cursor: pointer;
+}
+
+.position0 {
+    position: absolute;
+    left: -515px;
+    transition: all 150ms;
+    z-index: 1;
+}
+
+.position1 {
+    position: absolute;
+    left: 15px;
+    transition: all 150ms;
+    z-index: 2;
+}
+
+.position2 {
+    position: absolute;
+    left: 545px;
+    transition: all 150ms;
+    z-index: 2;
+}
+
+.position3 {
+    position: absolute;
+    left: 1075px;
+    transition: all 150ms;
+    z-index: 2;
+}
+
+.position4 {
+    position: absolute;
+    left: 1605px;
+    transition: all 150ms;
+    z-index: 1;
+}
+
+.height {
+    height: 600px;
+}
+
+#work .slider .slider-image img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+#work .slider .slider-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 31px;
+}
+
+#work .slider .slider-text span{
+    color: #a7a7a7;
+}
+
+#work #slider:hover .slider-text span{
+    color: #faecdc;
+}
+#work #slider:hover .slider-text h3{
+    color: white;
 }
 
 /* Section 4 - price */
@@ -666,7 +772,7 @@ header .title a:last-child:hover,
 
 /* FOOTER */
 footer {
-    background: linear-gradient(#0c1a54 ,#020331);
+    background-image: linear-gradient(180deg,#0c1a54 0%,#030434 49%);
 }
 
 footer .newsletter{
@@ -707,7 +813,7 @@ footer .newsletter .input-mail input {
 footer .newsletter .input-mail a{
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: 10px;
     transform: translateY(-50%);
     color: white;
     background: linear-gradient(90deg, #04a3d0,#1e3e83);
@@ -794,4 +900,48 @@ footer .copy-social .credits .social i{
 
 footer .copy-social .credits .social i:hover{
     color: #f9636b;
+}
+
+/* fixed */
+.support {
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    text-align: center;
+    background-color: #527ceb;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 7px;
+    right: 20px;
+    color: white;
+    font-size: 25px;
+    transform: rotateY(180deg);
+    cursor: pointer;
+    z-index: 99;
+}
+
+.support:hover {
+    background-color: #466dd6;
+}
+
+.up a {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: fixed;
+    bottom: 45px;
+    z-index: 99;
+    right: 100px;
+}
+
+.up:hover a {
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 23px;
 }

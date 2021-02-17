@@ -214,8 +214,51 @@
 
             </section>
 
-            <!-- Section 3 - Se riesco la faccio per ultima -->
+            <!-- Section 3 - Slider -->
             <section id="work">
+
+                <div class="container">
+
+                    <!-- Inizio sezione portfolio -->
+                    <div class="work-text">
+
+                        <span class="little-text">Portfolio</span>
+    
+                        <h2>
+                            latest
+                            <span>work</span>
+                        </h2>
+
+                        <!-- Buttons per cambiare slide -->
+                        <div class="slider-buttons">
+                            <i @click="sliderPrev" class="fas fa-chevron-left"></i>
+                            <i @click="sliderNext" class="fas fa-chevron-right"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- Slider -->
+                    <div class="slider">
+
+                        <div v-for="item in slider" id="slider" :class="item.class + item.counter">
+                            <div class="slider-image">
+                                <img :src="item.img" alt="Preview Portfolio">
+                            </div>
+                            <div class="slider-text">
+                                <h3>{{item.title}}</h3>
+                                <span>{{item.subtitle}}</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Div con altezza per mantenere le proporzioni della sezione dato tutti gli elementi absolute -->
+                    <div class="height"></div>
+
+
+                </div>
+
             </section>
 
             <!-- Section 4 -->
@@ -542,7 +585,7 @@
 
 
         <!-- Footer -->
-        <footer>
+        <footer id="footer">
 
             <div class="container">
 
@@ -642,10 +685,20 @@
             </div>
 
         </footer>
+        <!-- /Footer -->
 
 
+        <!-- FIXED SECTION -->
+        <!-- Support button -->
+        <div class="support">
+            <i class="far fa-comment"></i>
+        </div>
 
-
+        <div class="up">
+            <a href="#app">
+                <i class="fas fa-caret-up"></i>
+            </a>
+        </div>
 
     </div>
 

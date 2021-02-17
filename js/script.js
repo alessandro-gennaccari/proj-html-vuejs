@@ -12,7 +12,7 @@ var app = new Vue({
                     },
                     {
                         name: 'About',
-                        link: '#',
+                        link: '#grow',
                         active: false
                      },
                      {
@@ -22,22 +22,60 @@ var app = new Vue({
                      },
                      {
                         name: 'Blog',
-                        link: '#',
+                        link: '#post',
                         active: false
                      },
                      {
                         name: 'Contact',
-                        link: '#',
+                        link: '#footer',
                         active: false
                      },
                      {
                         name: 'Portfolio',
-                        link: '#',
+                        link: '#work',
                         active: false
                      }
                 ],
                 sign: 'Sign In'
             }
+        ],
+        slider: [
+            {  
+                img: 'img/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg',
+                title: 'Satisfy Poster',
+                subtitle: 'Digital Experience',
+                class: 'position',
+                counter: 0
+            },
+            {
+                img: 'img/8wa60okr-1-790x576.jpg',
+                title: 'Basket of Flower on table',
+                subtitle: 'Branding Strategy',
+                class: 'position',
+                counter: 1
+            },
+            {
+                img: 'img/DRY-1-790x576.jpg',
+                title: 'Purinky Products',
+                subtitle: 'Digital Experience',
+                class: 'position',
+                counter: 2
+            },
+            {
+                img: 'img/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg',
+                title: 'Satisfy Poster',
+                subtitle: 'Branding Strategy',
+                class: 'position',
+                counter: 3
+            },
+            {
+                img: 'img/84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg',
+                title: 'Mock-up Template',
+                subtitle: 'Ecommerce',
+                class: 'position',
+                counter: 4
+            }
+
         ],
         footer: [
             {
@@ -50,7 +88,7 @@ var app = new Vue({
                     },
                     {
                         title: 'Contact',
-                        url: '#'
+                        url: '#footer'
                     },
                     {
                         title: 'Blog',
@@ -98,6 +136,7 @@ var app = new Vue({
         ]
     },
     methods: {
+        /* Ricolora la voce della navbar Selezionata */
         activeMenu(index){
             let counter = index;
             this.header.forEach(element => {
@@ -107,6 +146,24 @@ var app = new Vue({
                         element.active = true;
                     }
                 });
+            });
+        },
+        sliderPrev(){
+            this.slider.forEach(element => {
+                if (element.counter == 4) {
+                    element.counter = 0
+                } else {
+                    element.counter += 1
+                }
+            });
+        },
+        sliderNext(){
+            this.slider.forEach(element => {
+                if (element.counter == 0) {
+                    element.counter = 4
+                } else {
+                    element.counter -= 1
+                }
             });
         }
     }

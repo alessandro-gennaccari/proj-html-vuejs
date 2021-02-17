@@ -398,35 +398,35 @@ header .title a:last-child:hover,
 .position0 {
     position: absolute;
     left: -515px;
-    transition: all 150ms;
+    transition: all 0.3s;
     z-index: 1;
 }
 
 .position1 {
     position: absolute;
     left: 15px;
-    transition: all 150ms;
+    transition: all 0.3s;
     z-index: 2;
 }
 
 .position2 {
     position: absolute;
     left: 545px;
-    transition: all 150ms;
+    transition: all 0.3s;
     z-index: 2;
 }
 
 .position3 {
     position: absolute;
     left: 1075px;
-    transition: all 150ms;
+    transition: all 0.3s;
     z-index: 2;
 }
 
 .position4 {
     position: absolute;
     left: 1605px;
-    transition: all 150ms;
+    transition: all 0.3s;
     z-index: 1;
 }
 
